@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border: 10px solid transparent;
+  border-color: #4a02b5 #fff #015e4f #000;
+  border-radius: 100%;
+  animation: thing 10s cubic-bezier(0.35, -0.14, 0.79, .9) infinite;
+}
+
+@keyframes thing {
+  50% {
+    transform: rotateZ(-.2turn);
+  }
+  50% {
+    transform: rotateZ(.8turn);
+  }
+}

@@ -1,0 +1,28 @@
+doctype html 
+html 
+    head 
+        title Concentric Circle
+        link(rel='stylesheet', type="text/css" href=' ../style.css' )
+    body
+        .container 
+            //mixin/function that creates each concentric circle.
+            mixin thing(n)
+                if n > 0
+                    .thing
+                        +thing(n - 1)
+
+            //first circle
+            .things
+                - i = 1
+                while i--
+                    +thing(10)
+            //second circle        
+            .things
+                - i = 1
+                while i--
+                    +thing(25)
+            //third circle
+            .things
+                - i = 1
+                while i--
+                    +thing(10)
