@@ -2,7 +2,7 @@
 
 ### Spinnin' Round
 
-# warning: contains an animation with flashing colors
+### warning: contains an animation with flashing colors
 
 ---
 permalink: /index.html
